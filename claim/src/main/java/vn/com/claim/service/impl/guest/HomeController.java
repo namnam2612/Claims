@@ -1,4 +1,4 @@
-package vn.com.claim.controller.guest;
+package vn.com.claim.service.impl.guest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
