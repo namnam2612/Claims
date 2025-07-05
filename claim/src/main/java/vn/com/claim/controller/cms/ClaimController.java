@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ClaimController {
 
+    //abcdef
 
     @GetMapping("/cms/claim-manager")
     public String claimManager() {
