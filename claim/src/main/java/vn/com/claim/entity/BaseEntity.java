@@ -1,4 +1,5 @@
 package vn.com.claim.entity;
+import vn.com.claim.utils.Constants;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,10 +17,10 @@ public class BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long id;
 
-    private LocalDateTime createdDate;
-    private LocalDateTime LastModifiedDate;
-    private String createdBy;
-    private String lastModifiedBy;
-    private Boolean deleted;
+    private LocalDateTime createdDate = LocalDateTime.now();
+    private LocalDateTime lastModifiedDate = LocalDateTime.now();
+    private String createdBy = Constants.SYSTEM.ADMIN.toString();;
+    private String lastModifiedBy = Constants.SYSTEM.ADMIN.toString();
+    private Boolean deleted = Boolean.FALSE;
 
 }
